@@ -1,4 +1,10 @@
 header img {
     float: left;
     padding: 10px;
+    border-radius: 30px;
+    width: 150px;
+}
+
+body {
+    background-image: url("symphony.png")
 }
