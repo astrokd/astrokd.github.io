@@ -7,4 +7,6 @@ header img {
 
 body {
     background-image: url("symphony.png")
+    margin: 0 auto;
+    text-align: center;
 }
