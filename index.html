@@ -24,17 +24,25 @@
   <header class="border-bottom">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1">Software Dev</span>
+      <span class="navbar-brand mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="32" viewBox="0 0 118 94" class="me-2" role="img">
+          <g>
+            <ellipse x="10" y="30" cx="100" cy="50" rx="80" ry="40" style="fill:none;stroke:black;stroke-width:2"></ellipse>
+            <text x="60" y="70" fill="currentColor" font-size="55" font-family="Verdana">KD</text>
+          </g>
+        </svg>
+        Software Dev
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled">Contact</a>
@@ -46,16 +54,18 @@
 </header>
 
   <main>
-    <h1>Kevin Dreyer</h1>
-    <p class="fs-5">I am a technical support lead and web developer with a passion for helping people use technology successfully.  Currently, I am a stay-at-home dad taking care of 2 kids while also working on web development projects, primarily programing in JavaScript.</p>
+    <div class="mt-4" id="about">
+      <h1>Kevin Dreyer</h1>
+      <p class="fs-5">I am a technical support lead and web developer with a passion for helping people use technology successfully.  Currently, I am a stay-at-home dad taking care of 2 kids while also working on web development projects, primarily programing in JavaScript.</p>
 
-    <div class="col-4 mb-4">
-      <a href="https://www.linkedin.com/in/kevinjdreyer" class="btn btn-secondary btn-sm px-4 mb-2" title="LinkedIn" rel="noopener" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="https://github.com/astrokd" class="btn btn-secondary btn-sm px-4 mb-2" title="GitHub" rel="noopener" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
+      <div class="col-4 mb-4">
+        <a href="https://www.linkedin.com/in/kevinjdreyer" class="btn btn-secondary btn-sm px-4 mb-2" title="LinkedIn" rel="noopener" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/astrokd" class="btn btn-secondary btn-sm px-4 mb-2" title="GitHub" rel="noopener" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
     </div>
     
     <div class="text-center">
@@ -68,7 +78,7 @@
     <hr class="col-12 mb-3 mt-3">
 
     <div class="row g-4">
-      <div class="col-md-12">
+      <div class="col-md-12 mt-4" id="skills">
         <h2>Technical Skills</h2>
         <p>Experence developing website with the following tools.</p>
         <div class="container">
@@ -119,10 +129,22 @@
         </div>
       </div>
 
-      <div class="col-md-12">
+      <div class="col-md-12 mt-4" id="projects">
         <h2>Projects</h2>
         <p>Here are some projects I have worked on.</p>
-        <div class="row row-cols-2 row-cols-md-1 g-4">
+        <div class="row row-cols-1 row-cols-md-1 g-4">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Peak Hiker</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Hiking Blog</h6>
+                <p class="card-text">Blog Web Site about hiking.  Built using GatsbyJS with MDX files defining pages.</p>
+                <a href="https://peakhiker.gatsbyjs.io/" rel="noopener" target="_blank" class="card-link">Website</a>
+                <a href="https://github.com/astrokd/peak-hiker" rel="noopener" target="_blank" class="card-link">Repro</a>
+                <p class="card-text"><small class="text-muted">Tools Used: GatsbyJS, ReactJS, GraphQL, Bootstrap, HTML5, CSS, JavaScript, MDX, Git, GitHub</small></p>
+              </div>
+            </div>
+          </div>
           <div class="col">
             <div class="card">
               <div class="card-body">
@@ -148,6 +170,10 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="col-md-12 mt-4" id="contact">
+      <h2>Contact</h2>
+      coming soon
     </div>
   </main>
   <footer class="pt-5 my-5 text-muted border-top">
