@@ -33,3 +33,8 @@
     height: 2em;
     background: url(powershell.svg);
 }
+.windows {
+    width: 2em;
+    height: 2em;
+    background: url(windows-brands.svg);
+}
